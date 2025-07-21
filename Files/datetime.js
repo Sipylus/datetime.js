@@ -1,38 +1,38 @@
-// Function to get the current time and display it on the page
+// datetime.js — 1.1.0
+
 function getthedate() {
-  const dayarray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  const montharray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const dateOptions = {
+    timeZone: 'America/New_York',
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  };
 
-  let mydate = new Date();
-  let year = mydate.getFullYear(); // Use getFullYear() instead of getYear()
-  let day = mydate.getDay();
-  let month = mydate.getMonth();
-  let daym = mydate.getDate();
-  let hours = mydate.getHours();
-  let minutes = mydate.getMinutes();
-  let seconds = mydate.getSeconds();
-  let dn = "AM";
+  const timeOptions = {
+    timeZone: 'America/New_York',
+    hour: 'numeric',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: true
+  };
 
-  if (hours >= 12) dn = "PM";
-  if (hours > 12) hours = hours - 12;
-  if (hours === 0) hours = 12;
-  if (minutes <= 9) minutes = "0" + minutes;
-  if (seconds <= 9) seconds = "0" + seconds;
+  const dateFormatter = new Intl.DateTimeFormat('en-US', dateOptions);
+  const timeFormatter = new Intl.DateTimeFormat('en-US', timeOptions);
 
-  // Format the date string without the leading zero for the day
-  let cdate = `${dayarray[day]}, ${montharray[month]} ${daym}, ${year} at ${hours}:${minutes}:${seconds} ${dn}`;
+  const now = new Date();
+  const formattedDate = dateFormatter.format(now);
+  const formattedTime = timeFormatter.format(now);
 
-  // Update the clock element if it exists
   const clockElement = document.getElementById("clock");
   if (clockElement) {
-    clockElement.innerHTML = `${cdate}.`;
+    clockElement.innerHTML = `${formattedDate}, ${formattedTime}.`;
   }
 }
 
-// Function to start the clock
 function goforit() {
-  setInterval(getthedate, 1000);  // Continuously call getthedate every second
+  getthedate();
+  setInterval(getthedate, 1000);
 }
 
-// Start the clock when the page is loaded
 window.onload = goforit;
