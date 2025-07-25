@@ -10,10 +10,11 @@ JavaScript utility to display the current date and time.
 
 ## Features
 
-- Displays the current day of the week, month, date, and time
+- Displays the current weekday, month, date, year, and time
 - Uses 12-hour clock format with AM/PM
-- Manual formatting using JavaScript Date API
-- Updates every second
+- Locale-aware using `Intl.DateTimeFormat` (v1.1.0+)
+- Automatically updates every second
+- Lightweight and browser-friendly
 - Designed to display in a DOM element with ID `clock`
 
 ## Usage
