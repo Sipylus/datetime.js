@@ -4,7 +4,9 @@ JavaScript utility to display the current date and time.
 
 ## Version
 
-**1.0** – Initial release using manual formatting and 12-hour display.
+- **1.0.0** – Initial release
+- **1.0.1** – Internal Improvements
+- **1.1.0** – Intl Upgrade
 
 ## Features
 
