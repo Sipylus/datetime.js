@@ -26,7 +26,7 @@ function getthedate() {
 
   const clockElement = document.getElementById("clock");
   if (clockElement) {
-    clockElement.innerHTML = `${formattedDate}, ${formattedTime}.`;
+    clockElement.innerHTML = `${formattedDate}, at ${formattedTime}.`;
   }
 }
 
