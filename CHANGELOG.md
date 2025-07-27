@@ -6,16 +6,16 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
-## [1.1.1] – 2025-07-27
+## [1.1.1]
 ### Changed
 - Improved clock display formatting: now shows `"at {time}"` for better readability.
 
-## [1.1.0] – 2025-07-22
+## [1.1.0]
 ### Added
 - Introduced internationalization support using `Intl.DateTimeFormat`.
 - Date and time are now locale-aware.
 
-## [1.0.1] – 2025-07-22
+## [1.0.1]
 ### Changed
 - Internal performance improvements.
 - Minor code cleanup, no user-facing changes.
