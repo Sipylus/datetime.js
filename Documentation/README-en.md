@@ -2,13 +2,6 @@
 
 JavaScript utility to display the current date and time.
 
-## Version
-
-- **1.0.0** – Initial release
-- **1.0.1** – Internal Improvements
-- **1.1.0** – Intl Upgrade
-- **1.1.1** - Text Display Refinement
-
 ## Features
 
 - Displays the current weekday, month, date, year, and time
