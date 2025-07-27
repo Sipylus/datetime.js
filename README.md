@@ -2,7 +2,7 @@
 
 JavaScript utility to display the current date and time.
 
-## Languages
+## 🌐 Languages
 - [English (en-us)](Documentation/README-en.md)
 - Français (fr)
 - Deutsch (de)
