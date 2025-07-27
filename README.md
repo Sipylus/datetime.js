@@ -10,3 +10,8 @@ JavaScript utility to display the current date and time.
 - Español (es)
 - 日本語 (ja)
 - 简体中文 (zh-cn)
+
+## 📄 Documentation
+
+- [Changelog](CHANGELOG.md)
+- [License](LICENSE)
