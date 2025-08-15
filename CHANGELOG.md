@@ -20,7 +20,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Internal performance improvements.
 - Minor code cleanup, no user-facing changes.
 
-## [1.0.0] – 2025-07-22
+## [1.0.0]
 ### Added
 - Initial release of `datetime.js`.
 - Displays current weekday, month, day, year, and time.
